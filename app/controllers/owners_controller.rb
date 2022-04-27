@@ -1,3 +1,4 @@
+
 class OwnersController < ApplicationController
   before_action :current_owner, only: [:show, :edit, :update, :destroy]
 

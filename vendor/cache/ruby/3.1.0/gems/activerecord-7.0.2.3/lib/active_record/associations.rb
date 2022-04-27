@@ -597,7 +597,7 @@ module ActiveRecord
       #
       #   class Firm < ActiveRecord::Base
       #     has_many :clients,
-      #              dependent: :destroy,
+      #              dependent: :delete-all,
       #              after_add: :congratulate_client,
       #              after_remove: :log_after_remove
       #

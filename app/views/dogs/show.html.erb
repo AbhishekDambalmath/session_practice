@@ -5,5 +5,5 @@
 
 <h4>Owner: <%= link_to @dog.owner.to_s, owner_path(@dog.owner) %></h4>
 
-<%= link_to "Delete", @dog, :method => :delete %></p>
+<%= link_to "Delete", @dog, method: 'delete' %></p>
 <p><%= link_to 'Go back to all dogs', dogs_path %></p>

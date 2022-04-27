@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   get 'login', to: 'sessions#new'
   post 'login', to: 'sessions#create'
   get 'authorized', to: 'sessions#page_requires_login'
-  
+  delete 'owners/:id/delete' => 'owners#destroy', as: 'owners_delete'
+  get '/owners/:id/delete' => 'owners#destroy'
 end
   
