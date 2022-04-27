@@ -1,0 +1,14 @@
+<table>
+  <% @owners.each do |owner| %>
+    <br>
+    <tr>
+      <td><%= link_to owner.to_s, owner_path(owner) %></td>
+     
+      <td><%= button_to 'Remove', owner_path(owner), method: 'delete', data: { confirm: 'Are you sure?' } %></td>
+    <% end %>
+</table>
+
+
+
+<img src="https://img.etsystatic.com/il/8daee8/1445300227/il_340x270.1445300227_mitp.jpg?version=0">
+
