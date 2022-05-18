@@ -5,6 +5,8 @@ class UsersController < ApplicationController
     @user = User.new
   end
 
+  def 
+
   def create
     @user = User.create(params.require(:user).permit(:username,        
     :password))
