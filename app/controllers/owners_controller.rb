@@ -36,6 +36,8 @@ class OwnersController < ApplicationController
     redirect_to owners_path
   end
 
+  
+
   private
   def owner_params
     params.require(:owner).permit(:first_name, :last_name, :occupation, :age, :img_url)

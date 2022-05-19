@@ -35,6 +35,12 @@ class DogsController < ApplicationController
     redirect_to dogs_path
   end
 
+  def search 
+    @key = dogs.all
+    render "dogs/search"
+
+  end
+
   private
   def dog_params
     params.require(:dog).permit(:name, :breed, :age, :owner_id)
